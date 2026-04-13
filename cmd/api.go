@@ -27,6 +27,9 @@ func (app *application) mount() http.Handler {
 	router.HandleFunc("GET /products", productHandler.ListProducts)
 	router.HandleFunc("GET /product", productHandler.FindProductByID)
 
+	//orderHandler := orders.NewHandler(nil)
+	//router.HandleFunc("POST /orders", orderHandler.PlaceOrder)
+
 	return router
 }
 

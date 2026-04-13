@@ -6,3 +6,5 @@ FROM products;
 SELECT *
 FROM products
 WHERE id = $1;
+
+-- name: PlaceOrder :exec
